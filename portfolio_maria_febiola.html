@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maria Febiola Krisanti Fouk — Portofolio</title>
+  <meta name="description" content="Portofolio Maria Febiola Krisanti Fouk — Web Developer / Programmer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c3aed;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#071028 0%, #071828 60%);color:#e6eef8}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1000px;margin:40px auto;padding:32px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:72px;height:72px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#4f46e5);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .brand h1{font-size:20px;margin:0}
+    nav a{margin-left:18px;font-weight:600;color:#cfe6ff;opacity:0.95}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:center;margin-bottom:28px}
+    .card{background:var(--glass);padding:22px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6);backdrop-filter: blur(6px)}
+    .intro h2{margin:0 0 8px 0;font-size:28px}
+    .role{color:var(--muted);margin-bottom:12px}
+    .cta{display:flex;gap:12px}
+    .btn{background:linear-gradient(90deg,var(--accent),#5b21b6);padding:10px 14px;border-radius:10px;color:white;font-weight:700;display:inline-block}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+
+    /* Skills + Projects */
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+    ul.skills{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px;margin:0}
+    ul.skills li{background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:10px;font-weight:600}
+    .projects .project-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0 0 6px 0}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+
+    /* Experience / Contact */
+    .experience li{margin-bottom:12px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .projects .project-list{grid-template-columns:1fr}
+      nav{display:none}
+      .container{margin:20px;padding:20px}
+    }
+
+    /* small helper */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" style="overflow:hidden;padding:0"><img src="foto-profil.jpg" alt="Foto Profil Maria Febiola" style="width:100%;height:100%;object-fit:cover;border-radius:14px"></div>
+        <div>
+          <h1>Maria Febiola Krisanti Fouk</h1>
+          <div class="muted">Full‑stack Developer • Programmer • Problem Solver</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card intro">
+        <h2>Halo — Saya Maria Febiola</h2>
+        <div class="role">Saya membuat aplikasi web yang sederhana, cepat, dan mudah digunakan.</div>
+        <p class="muted">Saya fokus pada pengembangan front-end modern, backend yang handal, dan pengalaman pengguna yang baik. Berikut ringkasan singkat tentang saya, keterampilan, dan beberapa proyek pilihan.</p>
+        <div style="margin-top:14px" class="cta">
+          <a class="btn" href="#projects">Lihat Projek</a>
+          <a class="btn ghost" href="mailto:mariafebiola30@gmail.com">Kirim Email</a>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 id="about">Tentang</h3>
+        <p class="muted" style="margin-top:6px">Nama: <strong>Maria Febiola Krisanti Fouk</strong></p>
+        <p class="muted">Lokasi: Yogyakarta, Indonesia</p>
+        <p style="margin-top:12px">Saya memiliki minat kuat di pengembangan web full‑stack, membuat solusi yang praktis, dan terus belajar teknologi baru.</p>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:12px 0">
+        <h4>Kontak & Sosial</h4>
+        <p style="margin:6px 0"><strong>Email:</strong> <a href="mailto:mariafebiola30@gmail.com">mariafebiola30@gmail.com</a></p>
+        <p style="margin:6px 0"><strong>GitHub:</strong> <a href="https://github.com/Febiola30">github.com/Febiola30</a></p>
+        <p style="margin:6px 0"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/Maria Febiola Krisanti Fouk">linkedin.com/in/Maria Febiola Krisanti Fouk</a></p>
+      </aside>
+    </section>
+
+    <section class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <h3 id="projects">Projek Pilihan</h3>
+        <div class="muted">3 proyek terbaru</div>
+      </div>
+
+      <div class="projects">
+        <div class="project-list">
+          <article class="project">
+            <h3>Project A — Web E‑Commerce</h3>
+            <p class="muted">Sistem toko online sederhana dengan fitur katalog, keranjang, dan pembayaran (integrasi dummy). Tech: HTML, CSS, JavaScript, Node.js.</p>
+            <p style="margin-top:8px"><a href="#">Lihat kode</a> • <a href="#">Demo</a></p>
+          </article>
+
+          <article class="project">
+            <h3>Project B — Dashboard Analytics</h3>
+            <p class="muted">Dashboard interaktif untuk menampilkan metrik bisnis real-time. Tech: React, Chart.js, Express.</p>
+            <p style="margin-top:8px"><a href="#">Lihat kode</a> • <a href="#">Demo</a></p>
+          </article>
+
+          <article class="project">
+            <h3>Project C — Aplikasi ToDo</h3>
+            <p class="muted">Aplikasi produktivitas dengan auth, CRUD task, dan penyimpanan lokal. Tech: Vue / PWA.</p>
+            <p style="margin-top:8px"><a href="#">Lihat kode</a> • <a href="#">Demo</a></p>
+          </article>
+
+          <article class="project">
+            <h3>Project D — Portfolio Personal</h3>
+            <p class="muted">Template portofolio ini (file index.html) yang responsif dan siap dipakai. Tech: HTML & CSS murni.</p>
+            <p style="margin-top:8px"><a href="#">Download</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-2" style="margin-top:18px">
+      <div class="card">
+        <h3 id="skills">Keahlian</h3>
+        <ul class="skills" style="margin-top:10px">
+          <li>HTML & CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React / Vue</li>
+          <li>Node.js / Express</li>
+          <li>Git & GitHub</li>
+        </ul>
+
+        <h4 style="margin-top:14px">Pengalaman singkat</h4>
+        <ul class="experience" style="margin-top:8px">  
+          <li><strong>marketplace</strong> — Shopee Affiliate (2024–sekarang)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 id="contact">Hubungi Saya</h3>
+        <p class="muted">Isi form di bawah (atau klik email) — ini contoh statis yang menggunakan mailto.</p>
+        <form onsubmit="submitForm(event)" style="display:flex;flex-direction:column;gap:8px;margin-top:12px">
+          <input id="name" placeholder="Nama" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <input id="email" type="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <textarea id="message" placeholder="Pesan singkat" rows="4" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+          <div style="display:flex;gap:8px">
+            <button class="btn" type="submit">Kirim</button>
+            <a class="btn ghost" href="mailto:mariafebiola30@gmail.com">Email Langsung</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Maria Febiola Krisanti Fouk — Portofolio sederhana. Dibuat dengan ❤️</p>
+    </footer>
+  </div>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // simple form behavior (open mailto)
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value || 'Nama';
+      const email = document.getElementById('email').value || 'email@example.com';
+      const message = document.getElementById('message').value || '';
+      const subject = encodeURIComponent('Pesan dari portofolio '+name);
+      const body = encodeURIComponent('Nama: '+name+'\nEmail: '+email+'\n\n'+message);
+      window.location.href = 'mailto:mariafebiola30@gmail.com?subject='+subject+'&body='+body;
+    }
+  </script>
+</body>
+</html>
